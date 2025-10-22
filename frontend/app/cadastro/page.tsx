@@ -10,7 +10,7 @@ export default function CadastroPage() {
         
         {/* Card */}
         <div
-          className="flex-1 flex flex-col p-10 rounded-lg shadow-lg max-w-md text-center"
+          className="flex-1 flex flex-col p-10 rounded-2xl shadow-lg max-w-md text-center"
           style={{ backgroundColor: "#e0e0e0" }} 
         >
           <h1
@@ -46,7 +46,7 @@ export default function CadastroPage() {
 
           <button
             style={{ backgroundColor: "#ff6700", color: "#ffffff" }}
-            className="rounded-full mt-2 p-2 hover:brightness-90 transition cursor-pointer"
+            className="rounded-full mt-2 p-2 hover:brightness-90 hover:scale-102 transition cursor-pointer"
           >
             Cadastrar
           </button>
