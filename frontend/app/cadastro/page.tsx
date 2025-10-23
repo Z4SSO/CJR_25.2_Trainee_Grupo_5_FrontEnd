@@ -3,50 +3,55 @@ import Image from "next/image";
 export default function CadastroPage() {
   return (
     <main
-      className="min-h-screen flex items-center justify-center"
-      style={{ backgroundColor: "#f5f5f5" }} 
+      className="bg-background min-h-screen flex items-center justify-center"
     >
-      <div className="flex flex-row items-center justify-center w-4/5 gap-10">
+      <div className="flex flex-row items-center justify-center w-full max-w-6xl mx-auto gap-10">
         
         {/* Card */}
         <div
-          className="flex-1 flex flex-col p-10 rounded-2xl shadow-lg max-w-md text-center"
-          style={{ backgroundColor: "#e0e0e0" }} 
+          className="bg-card flex-1 flex flex-col p-10 rounded-2xl shadow-lg max-w-md text-center"
         >
           <h1
-            className="font-bold text-2xl tracking-wider mb-6"
-            style={{ color: "#ff6700" }} 
+            className="text-laranja font-sans font-extrabold text-4xl tracking-wider mb-6"
           >
             Cadastre-se
           </h1>
 
           <div className="flex flex-col gap-3 my-2 text-gray-800 mb-3">
             <input
-              style={{ backgroundColor: "#f5f5f5" }}
-              className="rounded-full p-2 border border-gray-300"
+              className="bg-background rounded-full p-2 pl-4 border border-gray-300"
               type="text"
               name="nome"
               placeholder="Nome Completo"
             />
             <input
-              style={{ backgroundColor: "#f5f5f5" }}
-              className="rounded-full p-2 border border-gray-300"
+              className="bg-background rounded-full p-2 pl-4 border border-gray-300"
               type="text"
               name="user"
               placeholder="Username"
             />
             <input
-              style={{ backgroundColor: "#f5f5f5" }}
-              className="rounded-full p-2 border border-gray-300"
+              className="bg-background rounded-full p-2 pl-4 border border-gray-300"
+              type="email"
+              name="email"
+              placeholder="Email"
+            />
+            <input
+              className="bg-background rounded-full p-2 pl-4 border border-gray-300"
               type="password"
               name="pass"
               placeholder="Senha"
             />
+            <input
+              className="bg-background rounded-full p-2 pl-4 border border-gray-300"
+              type="password"
+              name="pass_confirm"
+              placeholder="Confirme a senha"
+            />
           </div>
 
           <button
-            style={{ backgroundColor: "#ff6700", color: "#ffffff" }}
-            className="rounded-full mt-2 p-2 hover:brightness-90 hover:scale-102 transition cursor-pointer"
+            className="bg-laranja text-white font-sans tracking-wider text-xl rounded-full mt-6 p-3 hover:brightness-90 hover:scale-102 transition cursor-pointer"
           >
             Cadastrar
           </button>
@@ -61,8 +66,8 @@ export default function CadastroPage() {
           <Image
             src="/images/cadastro-image.svg"
             alt="Cadastro Image"
-            width={500} 
-            height={500}
+            width={700} 
+            height={700}
             className="object-contain"
           />
         </div>
